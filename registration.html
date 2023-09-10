@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        *{
+             margin: 0;
+            padding: 0;
+        }
+
+        #navbar{
+            padding-bottom: 30px;
+        }
+
+        /* Style for the overall form container */
+/* Style for the overall form container */
+.box {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Style for the form headings */
+.box h4 {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for input fields */
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="password"]:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+/* Style for submit button */
+.submission{
+    padding: 10px;
+}
+
+.submission input[type="submit"] {
+    background-color: #02b349;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submission input[type="submit"]:hover {
+    background-color: rgb(95, 191, 255);
+}
+
+/* Optional: Add some spacing between boxes */
+.box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <img src="cuk-full-logo.jpg" alt="CUK-full-logo">
+    </nav>
+    <form action="registeration.php" method="POST">
+        <div class="box">
+            <h4>Name: </h4>
+            <input type="text" name="username" id="username" placeholder="Enter Your Name" required>
+        </div>
+        <div class="box">
+            <h4>Enroll_no: </h4>
+            <input type="text" name="enroll_no" id="enroll_no" placeholder="Enrollment Number" required>
+        </div>
+        <div class="box">
+            <h4>Room_no: </h4>
+            <input type="text" name="room" id="room" placeholder="Room Number" required>
+        </div>
+        <div class="box">
+            <h4>Email Id: </h4>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="box">
+            <h4>Set Password: </h4>
+            <input type="password" name="password" id="password" placeholder="Set Password" minlength="4" maxlength="15" required>
+        </div>
+        <div class="box">
+            <h4>confirm Password: </h4>
+            <input type="password" name="cpassword" id="password" placeholder="confirm Password" minlength="4" maxlength="15" required>
+        </div>
+        <section class="submission">
+            <input type="submit" name="Submit" value="Submit">
+        </section>
+    </form>
+    <br><hr><br>
+    <p>Already have an account? <a href="index.html">LogIn</a></p>
+</body>
+</html>
