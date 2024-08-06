@@ -28,14 +28,11 @@ This project is a web application designed to streamline and manage hostel compl
    - Place the project folder in the server's root directory.
 4. **Configure the database:**
    - Create a database for the application.
-5. **Update database configuration:**
-   - Open the `config.php` file.
-   - Update the database settings (host, username, password, and database name) to match your local setup.
 
 **Usage**
 
 1. Start your web server.
 2. Access the application:
-   Open your web browser and navigate to `http://localhost/hostel-complaint-management`.
+   Open your web browser and navigate to `http://localhost/management`.
 
 Feel free to reach out if you have any questions or need further assistance!
